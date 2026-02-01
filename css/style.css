@@ -115,6 +115,7 @@ body {overflow-x: hidden;}
 }
 
 .footer__logo {
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
