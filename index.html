@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__contenido">
+            <a href="index.html" class="encabezado__svg-link-inicio" aria-label="Ir a la página de inicio">
+                <svg width="200" height="90" class="encabezado__svg" viewBox="0 0 200 90">
+                    <rect x="45" y="5" width="80" height="50" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2" />
+                    <rect x="50" y="10" width="70" height="40" class="mon2" fill="#002f7b" stroke="#2F3645" stroke-width="2" />
+                    <rect x="75" y="55" width="20" height="10" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2" />
+                    <polygon points="50 70, 120 70, 130 80, 40 80" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2" />
+                    <polygon points="55 72, 115 72, 122 78, 48 78" class="mon2" fill="#000" stroke="#2F3645" stroke-width="1" />
+                    <g stroke-width="2" class="codigo__svg">
+                        <line x1="55" y1="19" x2="100" y2="19" stroke="#afeb8f" />
+                        <line x1="55" y1="24" x2="100" y2="24" stroke="#afeb8f" />
+                        <line x1="55" y1="29" x2="70" y2="29" stroke="#afeb8f" />
+                        <line x1="55" y1="33" x2="115" y2="33" stroke="#afeb8f" />
+                        <line x1="55" y1="38" x2="115" y2="38" stroke="#afeb8f" />
+                    </g>
+                </svg>
+            </a>
+            <nav class="encabezado__nav" aria-label="Barra de navegación principal">
+                <ul class="encabezado__menu">
+                    <li class="encabezado__item">
+                        <a href="historia.html" class="encabezado__link">Historia</a>
+                    </li>
+                    <li class="encabezado__item">
+                        <a href="juguemos.html" class="encabezado__link">Juguemos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="INICIO">
+
+        <section class="portada portada-principal">
+            <div class="portada__contenido">
+                <h1 class="portada__titulo">Programación e historia</h1>
+                <a href="#contenido" class="portada__scroll" aria-label="Bajar al contenido">
+                    <div class="portada__scroll-icono">
+                        <img src="/imagenes/flecha-abajo-verde.svg" class="portada__icono">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contenido" class="contenido">
+            <h2 class="contenido__titulo">Contenido</h2>
+            <div class="contenido__tarjetas">
+                <article class="tarjeta">
+                    <div class="tarjeta__imagen tarjeta__imagen--uno"></div>
+                    <div class="tarjeta__textos">
+                        <p class="tarjeta__descripcion">Conozcamos un poco sobre la historia de la programación</p>
+                        <a href="historia.html" class="tarjeta__boton">¡Quiero conocer!</a>
+                    </div>
+                    
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta__imagen tarjeta__imagen--dos"></div>
+                    <div class="tarjeta__textos">
+                        <p class="tarjeta__descripcion">Vamos a jugar un poco utilizando métodos aprendidos en clase</p>
+                        <a href="juguemos.html" class="tarjeta__boton">¡Vamos allá!</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__logo">
+                <img src="/imagenes/logo.png" alt="logo-codigo" class="footer__logo-imagen">
+                <div class="footer__logo-texto">Programación <span>e historia</span></div>
+            </div>
+            <p class="footer__nota">Sitio con fines educativos</p>  
+        </div>
+    </footer>
+    <script src="js/animaciones.js"></script>
+</body>
+</html>

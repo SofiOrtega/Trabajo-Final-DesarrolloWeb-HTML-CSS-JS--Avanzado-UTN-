@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logo.png">
+    <title>Juguemos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__contenido">
+            <a href="index.html" class="encabezado__svg-link-inicio" aria-label="Ir a la página de inicio">
+                <svg width="200" height="90" class="encabezado__svg" viewBox="0 0 200 90">
+                    <rect x="45" y="5" width="80" height="50" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2" />
+                    <rect x="50" y="10" width="70" height="40" class="mon2" fill="#002f7b" stroke="#2F3645" stroke-width="2" />
+                    <rect x="75" y="55" width="20" height="10" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2" />
+                    <polygon points="50 70, 120 70, 130 80, 40 80" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2" />
+                    <polygon points="55 72, 115 72, 122 78, 48 78" class="mon2" fill="#000" stroke="#2F3645" stroke-width="1" />
+                    <g stroke-width="2" class="codigo__svg">
+                        <line x1="55" y1="19" x2="100" y2="19" stroke="#afeb8f" />
+                        <line x1="55" y1="24" x2="100" y2="24" stroke="#afeb8f" />
+                        <line x1="55" y1="29" x2="70" y2="29" stroke="#afeb8f" />
+                        <line x1="55" y1="33" x2="115" y2="33" stroke="#afeb8f" />
+                        <line x1="55" y1="38" x2="115" y2="38" stroke="#afeb8f" />
+                    </g>
+                </svg>
+            </a>
+            <nav class="encabezado__nav" aria-label="Barra de navegación principal">
+                <ul class="encabezado__menu">
+                    <li class="encabezado__item">
+                        <a href="historia.html" class="encabezado__link">Historia</a>
+                    </li>
+                    <li class="encabezado__item">
+                        <a href="juguemos.html" class="encabezado__link">Juguemos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="portada portada-pequeña portada-juguemos">
+            <div class="portada__contenido">
+                <h1 class="portada__titulo">Juguemos un poco...</h1>
+            </div>
+        </section>
+        <section class="puzzle">
+        <div class="puzzle__contenido">
+            <h2 class="puzzle__titulo">Armemos el rompecabezas y veamos qué imagen es...</h2>
+
+            <div class="puzzle__zonas" id="contenidoZonas">
+                <div class="puzzle__zona" data-id="1">
+                    <p class="puzzle__instruccion">Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="puzzle__zona" data-id="2">
+                    <p class="puzzle__instruccion">Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="puzzle__zona" data-id="3">
+                    <p class="puzzle__instruccion">Arrastre y suelte la imagen aquí</p>
+                </div>
+            </div>
+
+            <div class="puzzle__piezas" id="contenidoPiezas">
+                <img src="imagenes/rompe3.png" id="pieza3" data-id="3" class="puzzle__pieza" draggable="true" alt="Pieza 3">
+                <img src="imagenes/rompe1.png" id="pieza1" data-id="1" class="puzzle__pieza" draggable="true" alt="Pieza 1">
+                <img src="imagenes/rompe2.png" id="pieza2" data-id="2" class="puzzle__pieza" draggable="true" alt="Pieza 2">
+            </div>
+
+            <div id="feedback" class="puzzle__feedback">
+                <h2 id="mensajeTexto" class="puzzle__mensaje"></h2>
+                <button id="btnReiniciar" class="puzzle__boton">Volver a iniciar</button>
+            </div>
+        </div>
+    </section>
+    
+</main>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__logo">
+                <img src="/imagenes/logo.png" alt="logo-codigo" class="footer__logo-imagen">
+                <div class="footer__logo-texto">PROGRAMACIÓN <span>E HISTORIA</span></div>
+            </div>
+            <p class="footer__nota">Sitio con fines educativos</p>  
+        </div>
+    </footer>
+    <script src="js/rompecabezas.js"></script>
+</body>
+</html>
